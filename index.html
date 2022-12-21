@@ -9,14 +9,28 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     </head>
     <body>
-        <div class="wrapper">
-            <div class="popup-box">
-                <div class="popup">
-                    <div class="details">
-                        
-                    </div>
+        <div class="popup-box">
+            <div class="popup">
+                <div class="content">
+                    <header>
+                        <p>Add a new Note</p>
+                        <i class="uil uil-times"></i>
+                    </header>
+                    <form action="#">
+                        <div class="row title"> 
+                            <label for="">Title</label>
+                            <input type="text">
+                        </div>
+                        <div class="row description">
+                            <label for="">Description</label>
+                           <textarea></textarea>
+                        </div>
+                        <button>Add Note</button>
+                    </form>
                 </div>
             </div>
+        </div>
+        <div class="wrapper">
             <li class="add-box">
                 <div class="uil uil-plus"></div>
                 <p class="title">Add new Note</p>
@@ -36,6 +50,7 @@
                 </div>
                 
             </li>     
+            <!-- dummy notes  -->
             
             <li class="note">
                 <div class="title">Note title</div>
@@ -81,5 +96,6 @@
                 </div>
             </li> 
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
