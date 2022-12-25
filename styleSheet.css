@@ -106,6 +106,18 @@ body {
     width: 100%;
     justify-content: center;
     }
+
+.popup-box, .popup-box .popup {
+        opacity: 0;
+        pointer-events: none; /*  none prevents all clicks,  */
+        transition: all 0.25s ease;
+} 
+
+.popup-box.show, .popup-box .popup {
+    opacity: 1;
+    pointer-events: auto;
+    
+} 
 .popup .content{
     /* width: calc(100% - 150px); */
     width: 100%;
@@ -167,7 +179,3 @@ form .row label {
     color: #fff;
     border-radius: 4px;
 }
-.popup-box, .popup-box .popup {
-    opacity: 0;
-    pointer-events: none; /*  none prevents all clicks,  */
-} 
