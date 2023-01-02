@@ -54,7 +54,7 @@ body {
     position: relative;
     z-index: 0; /* setting menu shows in the add a new note dialogue */
 }
-.settings:hover .menu {
+.settings.show .menu {
     transform: scale(1);
 }
 .menu span {
